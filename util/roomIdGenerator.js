@@ -9,4 +9,4 @@ module.exports.roomIdGenerator = function generateRoomIdentifier() {
         result += chars[(Math.floor(Math.random() * chars.length))];
 
     return result;
-}
+};
