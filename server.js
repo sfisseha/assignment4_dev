@@ -32,4 +32,4 @@ app.get('/:roomName', roomHandler.getRoom);
 
 // NOTE: This is the sample server.js code we provided, feel free to change the structures
 
-app.listen(port, () => console.log(`Madlibs server listening on http://localhost:${port}`));
+app.listen(port, () => console.log(`Server listening on http://localhost:${port}`));
