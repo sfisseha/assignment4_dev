@@ -1,6 +1,20 @@
-<h1> Room </h1>
-<p>This is a demo of chatroom page</p>
+<ul class="skip">
+    <a class="skip" href="#messages">Skip to Messages</a>
+</ul>
+
+<h1> Welcome to the Chatroom</h1>
 <p>
-    The room you are visiting is {{ roomName }}
+    The room you are visiting is {{ roomName }}. Feel free to Chat!
 </p>
-<p>To generate a new room, here is the room id: {{ newRoomId }}</p>
+
+<div class="messages" id="allMessages" role="main" aria-label="messages"></div>
+
+
+<form method="post" action="/{{roomName}}/messages" id="messageForm" role="form" aria-label="enter-newMessages">
+    <label>Nick-Name: <input type="text" name="nickname" id="nicknameField" value=""></label>
+    <label>:<input type="text" name="message" id="messageField"></label>
+    <input type="hidden" name="time" id="timeStamp">
+    <input type="submit" class="button" value="Send">
+</form>
+
+<script src="js/room.js" type="text/javascript"></script>
