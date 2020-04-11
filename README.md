@@ -9,8 +9,9 @@
 
 > Give two possible chatroom moderation features and the reasons that you should implement each one
 
-<!-- Put your answer to question 1 here -->
+>Two possible chatroom moderation features can be 
+>1) Putting restriction on certain content such as bad words, links or disturbing images. This will help create a more safe space environment for conversations/discussions to flourish with minimal insults and unessary bad words. 
+>2) Require a login to enter any given chatroom. This will help remove anonymity which some may have used to troll or aggrevate people without having their name attached to the message.
 
 ## Database Setup
-
-<!-- required if you use custom MySQL setup instead of the MySQL database provided or if you use other databases like SQLite, PostgreSQL... -->
+> Used Mongodb
