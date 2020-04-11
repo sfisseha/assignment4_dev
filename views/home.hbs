@@ -1,2 +1,19 @@
-<h1> Home </h1>
-<p>This is the {{ title }} page</p>
+<ul class="skip">
+    <a class="skip" href="#chatroomList">Skip to List of Chatrooms</a>
+</ul>
+
+<h1> Wanna Chat! </h1>
+<p>Welcome to the {{ title }} page</p>
+<p>Here is a list of existing chatrooms that you can join</p>
+
+<div class="chatroomList" role="main" aria-label="list-of-chatrooms">
+  {{#each list}}
+    <a href="/{{this.roomid}}"><button class="button" name="chatBlock">{{this.roomid}}</button></a>
+  {{/each}}
+</div>
+
+
+<form action= "/" method="post" class="create" role="navigation" aria-label="createNewChatroom">
+  <h4> Create a new Chatroom </h4>
+  <button class="createBtn">Create</button>
+</form>
